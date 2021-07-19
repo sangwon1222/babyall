@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Aram</title>
+    <script>
+      function goBabyAll(demoModeFlag) {
+        let url = "./index.html";
+        // if(demoModeFlag!=3){
+        //   window.open("./index.html", '_blank' );
+        // }
+
+        // sessionStorage.setItem('token', "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjaGlsZFRva2VuIiwiY2hpbGRJZCI6Ik1DLTUxNzM1ODIxNTkyODEzNjU4IiwiY2hpbGROYW1lIjoi7JWE656MIiwiY2hpbGRBZ2UiOjgsImNoaWxkVGh1bWJuYWlsIjoiaHR0cHM6Ly9jZG4uc21hcnRkb29kbGUubmV0L21lbWJlci91c2VyL2NoaWxkL3Byb2ZpbGUvMjAyMDA2LzE1OTI5ODcxNzIwMDY3NzkuanBnIiwiaWF0IjoxNTkzNDg3MTM3LCJleHAiOjE1OTQwOTE5Mzd9.Y5QTvAKRQxQ4ZMFePaNQLBWPmpJ8OkQeqQBjWdM1FNM");
+        if (demoModeFlag == 0) {
+          //테스트 토큰
+          localStorage.setItem(
+            "token",
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIiLCJzeXNNZW1JZCI6Ik1FLTAwMDAwMDAwMDAwMDAwMDI0Iiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImNoaWxkSWQiOiJNRS0xMDAwMDAwMDAwMDAwMDAyNCIsImNoaWxkTmFtZSI6IuyVhOuejOydtDAyNCIsImNoaWxkQWdlIjoyLCJjaGlsZFRodW1ibmFpbCI6Imh0dHBzOi8vY29udGVudHMuYXJhbWJvb2tjbHViLmNvbS9tZW1iZXIvdXNlci9jaGlsZC9wcm9maWxlLzIwMjAxMS8xNjA0ODkxOTg5OTY5MjUyLlBORyIsImxybmdNZW1TZXFubyI6MjQsImlhdCI6MTYyMTMwNjkxOCwiZXhwIjoxNjIxOTExNzE4fQ.9cvNkf8me-oJCsqAyLWHIlfGXrr2i3WqLdZK9YGLcqo"
+          );
+          localStorage.setItem(
+            "auth._token.local",
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmFtMDI0IiwibWVtTm0iOiLslYTrnowwMjQiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3lzTWVtSWQiOiJNRS0wMDAwMDAwMDAwMDAwMDAyNCIsImlhdCI6MTYyMTMwNjkxNSwiZXhwIjoxNjIxOTExNzE1fQ.fYuy5iY2k3qeT_bEganvMWbiIwrH5oBLTymFXEa93og"
+          );
+          localStorage.setItem("auth.strategy", "local");
+          localStorage.setItem("auth._refresh_token.local", "false");
+          localStorage.setItem("name", "아람024");
+          localStorage.setItem("trlvrsnDays", "false");
+
+          // 만기된 토큰
+          // localStorage.setItem('token', "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIiLCJzeXNNZW1JZCI6Ik1FLTIwMjAwOTExMTQwMDAwOTgwIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImNoaWxkSWQiOiJNQy0yMDIwMDkxMDExMTAwMDAyNCIsImNoaWxkTmFtZSI6Iuq5gOyVhOuejOyVhOuejOydtCIsImNoaWxkQWdlIjoyMCwiY2hpbGRUaHVtYm5haWwiOiJodHRwczovL2NvbnRlbnRzLmFyYW1ib29rY2x1Yi5jb20vbWVtYmVyL3VzZXIvY2hpbGQvcHJvZmlsZS8yMDIwMTAvMTYwMzA5MDcwMTAzMjMzMS5QTkciLCJscm5nTWVtU2Vxbm8iOjQ3LCJpYXQiOjE2MDMyNDk5NDksImV4cCI6MTYwMzg1NDc0OX0.HuxVQpRyKf8-_9JFNuu6NGAlT9HuZ5UyRjombH03LDw");
+        } else if (demoModeFlag == 1) {
+          localStorage.setItem("trlvrsnDays", "true");
+          localStorage.removeItem("token");
+        } else if (demoModeFlag == 2) {
+          localStorage.removeItem("trlvrsnDays");
+          // localStorage.setItem("trlvrsnDays", "false");
+          localStorage.removeItem("token");
+        } else if (demoModeFlag == 3) {
+          url = "./demoPlay.html";
+        }
+        location.href = url;
+      }
+    </script>
+  </head>
+  <body>
+    <p id="title"></p>
+    <div class="btnWrap">
+      <button onclick="goBabyAll(0)">
+        베이비올 진입<br />(토큰<span>사용</span>)</button
+      ><br />
+      <button onclick="goBabyAll(1)">
+        베이비올 진입<br />(데모모드: 토큰<span>미사용</span>,
+        체험기간<span>진행</span>)</button
+      ><br />
+      <button onclick="goBabyAll(2)">
+        베이비올 진입<br />(데모모드: 토큰<span>미사용</span>,
+        체험기간<span>만료</span>)</button
+      ><br />
+      <button onclick="goBabyAll(3)">
+        베이비올 진입<br />(데모플레이: <span>개발자용</span>)</button
+      ><br />
+    </div>
+  </body>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    #title {
+      overflow: hidden;
+      display: block;
+      position: relative;
+      max-width: 1280px;
+      padding: 1rem;
+      margin: 2rem auto;
+      animation: start 3s forwards;
+    }
+    #title:before {
+      content: "현재 포커스는 아람 사이트 메인 페이지 입니다.";
+      display: block;
+      width: 100%;
+      letter-spacing: wrap;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .btnWrap {
+      padding: 0;
+      width: 100%;
+      max-width: 900px;
+      margin: 5rem auto;
+    }
+    button {
+      overflow: hidden;
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      text-align: left;
+      box-sizing: border-box;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 1px #000 solid;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    span {
+      color: red;
+    }
+  </style>
+</html>

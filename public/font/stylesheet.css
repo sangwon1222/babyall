@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'NotoSansKR-Medium-Alphabetic';
+    src: url('NotoSansKR-Medium-Alphabetic.eot');
+    src: url('NotoSansKR-Medium-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Medium-Alphabetic.woff') format('woff'),
+        url('NotoSansKR-Medium-Alphabetic.ttf') format('truetype'),
+        url('NotoSansKR-Medium-Alphabetic.svg#NotoSansKR-Medium-Alphabetic') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'minigate';
+    src: url('minigate-Bold.eot');
+    src: url('minigate-Bold.eot?#iefix') format('embedded-opentype'),
+        url('minigate-Bold.woff2') format('woff2'),
+        url('minigate-Bold.woff') format('woff'),
+        url('minigate-Bold.ttf') format('truetype'),
+        url('minigate-Bold.svg#minigate-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular-Alphabetic';
+    src: url('NotoSansKR-Regular-Alphabetic.eot');
+    src: url('NotoSansKR-Regular-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Regular-Alphabetic.woff') format('woff'),
+        url('NotoSansKR-Regular-Alphabetic.ttf') format('truetype'),
+        url('NotoSansKR-Regular-Alphabetic.svg#NotoSansKR-Regular-Alphabetic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPreplay';
+    src: url('BPreplay-Bold.eot');
+    src: url('BPreplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BPreplay-Bold.woff2') format('woff2'),
+        url('BPreplay-Bold.woff') format('woff'),
+        url('BPreplay-Bold.ttf') format('truetype'),
+        url('BPreplay-Bold.svg#BPreplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold-Alphabetic';
+    src: url('NotoSansKR-Bold-Alphabetic.eot');
+    src: url('NotoSansKR-Bold-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Bold-Alphabetic.woff') format('woff'),
+        url('NotoSansKR-Bold-Alphabetic.ttf') format('truetype'),
+        url('NotoSansKR-Bold-Alphabetic.svg#NotoSansKR-Bold-Alphabetic') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPreplay';
+    src: url('BPreplay.eot');
+    src: url('BPreplay.eot?#iefix') format('embedded-opentype'),
+        url('BPreplay.woff2') format('woff2'),
+        url('BPreplay.woff') format('woff'),
+        url('BPreplay.ttf') format('truetype'),
+        url('BPreplay.svg#BPreplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '210 Gureumsatang B';
+    src: url('TTComputersetakB.eot');
+    src: url('TTComputersetakB.eot?#iefix') format('embedded-opentype'),
+        url('TTComputersetakB.woff2') format('woff2'),
+        url('TTComputersetakB.woff') format('woff'),
+        url('TTComputersetakB.ttf') format('truetype'),
+        url('TTComputersetakB.svg#TTComputersetakB') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

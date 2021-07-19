@@ -1,0 +1,71 @@
+// @font-face {
+//   font-family: 'Godo';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+// }
+// @import url('https://fonts.googleapis.com/css?family=Jua:400');
+
+@viewport {
+  orientation: portrait;
+}
+
+html {
+  font-size: 20px;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+body {
+  // overflow: hidden;
+  
+  width:100%;
+  height:100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-size: 20px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  font-family: "NotoSansKR-Medium-Alphabetic"; /*'Jua';*/
+  user-select: none;
+  font-size: 1rem;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-touch-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+video::-webkit-media-controls-play-button {
+}
+video::-webkit-media-controls-timeline {
+}
+video::-webkit-media-controls-current-time-display {
+}
+video::-webkit-media-controls-time-remaining-display {
+}
+video::-webkit-media-controls-mute-button {
+}
+video::-webkit-media-controls-toggle-closed-captions-button {
+}
+video::-webkit-media-controls-volume-slider {
+}
